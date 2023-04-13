@@ -1,0 +1,226 @@
+:root {
+    --desktop-width: 1440px;
+    --mobile-width: 375px;
+
+    /*Primary color*/
+    --light-red: hsl(0deg 100% 67% / 32%);
+    --orangey-yellow: hsl(39deg 100% 56% / 38%);
+    --green-teal: hsl(166deg 100% 37% / 33%);
+    --Cobalt-blue: hsl(234deg 85% 45% / 19%);
+
+    /*graidiants for background*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    /*graidiants for circle*/
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*neutral*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card {
+    width: 700px;
+    height: 500px;
+    border-radius: 25px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 150px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.left {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px;
+    background-image: linear-gradient(180deg, var(--light-slate-blue), var(--light-royal-blue));
+
+}
+
+.result {
+    color: var(--light-lavender);
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    left: 33%;
+
+}
+
+.circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, var(--persian-blue), var(--violet-blue));
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+    display: flex;
+    color: var(--white);
+}
+
+.deg {
+    color: var(--light-lavender);
+    display: flex;
+    position: absolute;
+    top: 43%;
+}
+
+.great {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    top: 60%;
+    color: var(--white);
+}
+
+.text {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    font-size: 15px;
+    text-align: center;
+    left: 0%;
+    color: var(--light-lavender);
+}
+
+.summry {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-gray-blue);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 25px;
+}
+
+.d1 {
+    width: 80%;
+    height: 40px;
+    background-color: var(--light-red);
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.d2 {
+    width: 80%;
+    height: 40px;
+    background-color: var(--orangey-yellow);
+    border-radius: 10px;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.d3 {
+    width: 80%;
+    height: 40px;
+    background-color: var(--green-teal);
+    border-radius: 10px;
+    position: absolute;
+    top: 49%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.d4 {
+    width: 80%;
+    height: 40px;
+    background-color: var(--Cobalt-blue);
+    border-radius: 10px;
+    position: absolute;
+    top: 61%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.r1 {
+    margin-left: 40%;
+}
+
+.r2 {
+    margin-left: 45%;
+}
+
+svg {
+    margin: 10px;
+}
+
+span {
+    color: gray;
+}
+
+.re1 {
+    color: hsla(0, 100%, 67%, 0.997);
+}
+
+.me1 {
+    color: hsla(39, 100%, 56%, 0.99);
+}
+
+.ve1 {
+    color: hsl(166, 100%, 37%);
+}
+
+.vi1 {
+    color: hsl(234, 85%, 45%);
+}
+
+button {
+    position: absolute;
+    bottom: 13%;
+    right: 10%;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    font-size: 20px;
+    border-radius: 30px;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
